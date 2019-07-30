@@ -10,5 +10,5 @@ tsc client.ts
 ## Run
 
 ```sh
-node client.js | | xxd -r -p | nc IP_OF_ESP 9993
+node client.js | xxd -r -p | nc IP_OF_ESP 9993
 ```
