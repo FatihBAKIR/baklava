@@ -53,6 +53,6 @@ function GeneratePutRequest(capability : Buffer, data : Uint8Array) : Buffer {
 
 const cap = fs.readFileSync("woof1.cap");
 
-const req = GeneratePutRequest(cap, new Uint8Array(4));
+const req = GeneratePutRequest(cap, new Uint8Array(48)); // 6x64 bit numbers
 
 console.log(req.toString("hex"));
