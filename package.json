@@ -14,7 +14,6 @@
     "@types/msgpack5": "^3.4.1",
     "@types/node": "^11.13.7",
     "bignum": "^0.13.0",
-    "msgpack5": "^4.2.1",
-    "python-struct": "^1.0.6"
+    "msgpack5": "^4.2.1"
   }
 }
