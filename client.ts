@@ -40,7 +40,7 @@ function GeneratePutRequest(capability : Buffer, data : Uint8Array) : Buffer {
     const HostSeq = 42; // Only used for repair
 
     const body = msgpack().encode(
-        [1, "test", "fwd4_fun", HostId, HostSeq, data]);
+        [PutId, "test", "fwd4_fun", HostId, HostSeq, data]);
         
     const req_hash = sign_seq(body.slice(0));
 
